@@ -3,13 +3,13 @@
 ## Student
 Tomasz Przewoznik
 ## Description
-
+This assignment implements a simplified fixed-size memory pool that uses a Stack Abstract Data Type (ADT) to keep track of available memory blocks. MemoryPool creates a set of fixed size memory blocks and uses a custom Stack class to keep track of available blocks.
 ## Stack Implementation
 I used Vector, because the professor recommended that the class use it.
 ## How to Compile
-Compile main.cpp together with MemoryPool.cpp.
+g++ main.cpp MemoryPool.cpp -o packetpool
 ## How to Run
-
+./packetpool
 ## Analysis Questions
 1. It can quickly release and get new blocks using LIFO (Last In, First Out).
 2. allocate() returns nullptr since there are no blocks left.
